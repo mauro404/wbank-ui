@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+.accent-color-bg {
+    background-color: #17D0BC;
+}
+
+.accent-color {
+    color: #17D0BC;
+}
+
+.txt-white {
+    color: white;
+}
+
+.grid-center {
+    display: grid;
+    place-items: center;
+}

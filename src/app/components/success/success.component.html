@@ -1,0 +1,10 @@
+<ng-container *ngIf="user">
+    <div class="grid-center">
+        <img class="my-5 img-fluid" src="../../../assets/images/success.png" alt="Success" width="200" height="200" />
+
+        <h2>Operação realizada com sucesso.</h2>
+        <a class="link" [routerLink]="['/user', user.id]">
+            voltar para conta
+        </a>
+    </div>
+</ng-container>
