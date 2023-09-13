@@ -18,6 +18,9 @@ export class UserDetailsComponent implements OnInit {
   transferHistory$?: Observable<TransferHistory>;
   depositModel: DepositRequest;
   transferModel: TransferRequest;
+  isDepositModalVisible: boolean = false
+  isTransferModalVisible: boolean = false
+  isTransferHistoryModalVisible: boolean = false
 
   constructor(private route: ActivatedRoute,
     private componentsService: ComponentsService,
@@ -71,5 +74,26 @@ export class UserDetailsComponent implements OnInit {
           }
         });
     }
+  }
+
+  closeDepositModal()  {
+    this.isDepositModalVisible = false;
+  }
+  openDepositModal()  {
+    this.isDepositModalVisible = true;
+  }
+
+  closeTransferModal()  {
+    this.isTransferModalVisible = false;
+  }
+  openTransferModal()  {
+    this.isTransferModalVisible = true;
+  }
+
+  closeTransferHistoryModal()  {
+    this.isTransferHistoryModalVisible = false;
+  }
+  openTransferHistoryModal()  {
+    this.isTransferHistoryModalVisible = true;
   }
 }
