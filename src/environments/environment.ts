@@ -1,3 +1,3 @@
 export const environment = {
-    apiBaseUrl: 'wbankapi.azurewebsites.net'
+    apiBaseUrl: 'https://wbankapi.azurewebsites.net'
 };
